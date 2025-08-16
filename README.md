@@ -1,1 +1,1 @@
-# MultiShop
+# E-Commerce Microservice Project
