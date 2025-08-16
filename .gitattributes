@@ -61,3 +61,22 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# GitHub Linguist ayarları – dil istatistiklerinden hariç tutmalar
+###############################################################################
+
+# SCSS dosyalarını istatistiklerden çıkar (repoda kalır)
+*.scss linguist-vendored
+
+# İstersen yaygın "vendor" klasörlerini de istatistiklerden çıkar:
+# (Yalnızca gerçekten 3rd-party içerik ise aç)
+# node_modules/** linguist-vendored
+# wwwroot/lib/** linguist-vendored
+# wwwroot/vendor/** linguist-vendored
+# assets/vendor/** linguist-vendored
+
+# Otomatik üretilen/minify edilmiş dosyaları da sayma (opsiyonel ama önerilir)
+*.min.js linguist-generated
+*.min.css linguist-generated
+*.map linguist-generated
