@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace MultiShop.Cargo.DataAccessLayer.EntityFramework
 {
+    // TODO: Genel değil de entity'ye özgü metot tanımlanması gerekirse burada doldurulacak.
     public class EfCargoCustomerDal : GenericRepository<CargoCustomer>,ICargoCustomerDal
     {
         public EfCargoCustomerDal(CargoContext context) : base(context)
